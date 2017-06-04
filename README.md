@@ -1,12 +1,10 @@
 # Easychange Welcome Library
-------
 **Easychange Welcome Library** is a simple android library written in kotlin that allows show a fancy welcome in your app with fews (and easy) configurations. 
 
 # Sample
 ![alt text](https://github.com/flopezluksenberg/easychange-app-welcome/blob/develop/sample.gif?raw=true "Sample Video")
 
 # Configuration
-------
 To configure your welcome intro you need follow next steps:
 1. Create an android application class in your app if you don't have one yet
 2. In onCreate method of your application class, initialize welcome library with welcome steps knowing that welcome step definition is like next code:
