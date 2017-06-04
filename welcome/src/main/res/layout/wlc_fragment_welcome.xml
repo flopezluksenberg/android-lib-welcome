@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_fragmentwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_fragmentwelcome_skip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/wlc_button_fragmentwelcome_skip" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_fragmentwelcome_dots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabBackground="@drawable/wlc_selector_tablayout_dots"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+        <Button
+            android:id="@+id/button_fragmentwelcome_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/wlc_ic_arrow_right_white_24dp"
+            android:paddingEnd="40dp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/button_fragmentwelcome_done"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/wlc_button_fragmentwelcome_done"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

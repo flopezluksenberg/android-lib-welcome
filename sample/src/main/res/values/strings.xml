@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Sample: Welcome Lib</string>
+    <string name="step_1_title">First Title</string>
+    <string name="step_1_description">First very important description</string>
+    <string name="step_2_title">Second Title</string>
+    <string name="step_2_description">Second very important description</string>
+    <string name="step_3_title">Third Title</string>
+    <string name="step_3_description">Third very important description</string>
+    <string name="button_startwelcomesample">Start Welcome Lib Sample</string>
+    <string name="activity_main_start_for_result">Start for result</string>
+    <string name="activity_main_start_finishing_this">Start activity finishing this</string>
+    <string name="textview_activitymain_title">Welcome Lib Usage</string>
+    <string name="textview_activitymain_descritpion1">Welcome lib is a simple library that allows you show a fancy tipical intro with few (non-hard) configuration.</string>
+    <string name="textview_activitymain_descritpion2">Click next button to watch a live sample</string>
+    <string name="textview_activitymain_question">How it works?</string>
+    <string name="textview_activitymain_answer">When you start it, a new activity will appear with a ViewPager inside for each step and three buttons: Next, Skip and Done. If you press Done or Skip then the previews requested nextIntent will start and the activity will be finished.</string>
+    <string name="textview_activitymain_livesample">Live Sample!</string>
+    <string name="textview_activityfinished_title">Sample Finished!</string>
+    <string name="textview_activityfinished_description1">Sample app has finsished. If you have a suggest or you want report an issue please contact us in our github repository!</string>
+    <string name="textview_activityfinished_description2">If you want, you can try sample again clicking in next button</string>
+</resources>
