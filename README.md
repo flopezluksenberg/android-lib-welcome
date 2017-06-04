@@ -3,7 +3,7 @@
 **Easychange Welcome Library** is a simple android library written in kotlin that allows show a fancy welcome in your app with fews (and easy) configurations. 
 
 # Sample
-
+![alt text](https://github.com/flopezluksenberg/easychange-app-welcome/blob/develop/sample.gif?raw=true "Sample Video")
 
 # Configuration
 ------
