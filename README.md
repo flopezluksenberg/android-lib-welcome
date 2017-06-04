@@ -8,7 +8,7 @@
 
 1. Go to your root build.gradle file and add next line:
 
-```
+```gradle
 allprojects {
         repositories {
             ...
@@ -17,7 +17,7 @@ allprojects {
 }
 ```
 2. Next, go to you application level build.gradle file and add dependency:
-```
+```gradle
 dependencies {
     ...
     compile 'com.github.flopezluksenberg:easychange-app-welcome:v1.0.0'
@@ -33,7 +33,7 @@ To configure your welcome intro you need follow next steps:
 2. In onCreate method of your application class, initialize welcome library with welcome steps knowing that welcome step definition is like next code:
 
 **WelcomeStep definition**
-```
+```kotlin
 data class WelcomeStep(val title: String,
                        val description: String,
                        val backgroundColor: Int,
@@ -41,7 +41,7 @@ data class WelcomeStep(val title: String,
 ```
 
 Example of WelcomeStep can be:
-```
+```kotlin
 WelcomeStep(
     "A very nice title for this tab!",
     "A very nice description in this tab,
@@ -51,7 +51,7 @@ WelcomeStep(
 ```
 
 **Application class sample**
-```
+```kotlin
 class YourApplicationClass : Application(){
     private val welcomeSteps : Array<WelcomeStep> = arrayOf(WelcomeStep(...), WelcomeStep(...), ...)
     //...
@@ -62,7 +62,7 @@ class YourApplicationClass : Application(){
 }
 ```
 3. (Optional) Set welcome activity theme. To perform this you must add next code in your app AndroidManifest.xml
-```
+```xml
 <application ...>
     //..
     <activity android:name="com.easychange.welcome.ui.WelcomeActivity" android:theme="MyVeryFancyTheme!"/>
