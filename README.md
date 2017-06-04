@@ -4,7 +4,30 @@
 # Sample
 ![alt text](https://github.com/flopezluksenberg/easychange-app-welcome/blob/develop/sample.gif?raw=true "Sample Video")
 
-# Configuration
+# Gradle Configuration
+
+1. Go to your root build.gradle file and add next line:
+
+```
+allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+    }
+}
+```
+2. Next, go to you application level build.gradle file and add dependency:
+```
+dependencies {
+    ...
+    compile 'com.github.flopezluksenberg:easychange-app-welcome:v1.0.0'
+    ...
+}
+```
+3. Sync gradle files.
+4. Enjoy it!
+
+# App Configuration
 To configure your welcome intro you need follow next steps:
 1. Create an android application class in your app if you don't have one yet
 2. In onCreate method of your application class, initialize welcome library with welcome steps knowing that welcome step definition is like next code:
