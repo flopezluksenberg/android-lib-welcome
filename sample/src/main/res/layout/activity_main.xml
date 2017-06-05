@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    android:background="#eaeaea">
+    android:background="#eaeaea"
+    android:padding="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,64 +11,64 @@
         android:orientation="vertical">
 
         <TextView
-            android:text="@string/textview_activitymain_title"
-            android:textColor="@android:color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"/>
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/textview_activitymain_title"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:text="@string/textview_activitymain_descritpion1"
-            android:textColor="@android:color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif"/>
+            android:fontFamily="sans-serif"
+            android:text="@string/textview_activitymain_descritpion1"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
             android:text="@string/textview_activitymain_question"
             android:textColor="@android:color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif-medium"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"/>
+            android:textSize="14sp" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="sans-serif"
             android:text="@string/textview_activitymain_answer"
             android:textColor="@android:color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif"
-            android:layout_marginBottom="14dp"/>
+            android:textSize="14sp" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
             android:text="@string/textview_activitymain_livesample"
             android:textColor="@android:color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif-medium"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"/>
+            android:textSize="14sp" />
 
         <TextView
-            android:text="@string/textview_activitymain_descritpion2"
-            android:textColor="@android:color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif"
             android:layout_marginBottom="8dp"
-            android:gravity="center"/>
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/textview_activitymain_descritpion2"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -76,9 +76,19 @@
         android:id="@+id/button_activitymain_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_startwelcomesample"
+        android:layout_above="@+id/button_activitymain_start_remember"
+        android:layout_marginBottom="4dp"
         android:background="@android:color/holo_green_dark"
-        android:textColor="@android:color/white"
-        android:layout_alignParentBottom="true"/>
+        android:text="@string/button_startwelcomesample"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@id/button_activitymain_start_remember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/button_startwelcomesample_remember"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>

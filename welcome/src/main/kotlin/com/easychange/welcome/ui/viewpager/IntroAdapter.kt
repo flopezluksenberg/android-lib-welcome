@@ -23,7 +23,7 @@ class IntroAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
     }
 
 
-    fun isLastPage(currentPosition: Int): Boolean{
-        return fragments.size -1 == currentPosition
+    fun isLastPage(currentPosition: Int): Boolean {
+        return fragments.size - 1 == currentPosition
     }
 }

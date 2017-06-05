@@ -9,10 +9,11 @@ import com.easychange.welcome.addFragment
 import kotlinx.android.synthetic.main.wlc_activity_welcome.framelayout_activitywelcome as framelayout
 
 
-class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, WelcomeFragment.Listener{
-    companion object{
+class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, WelcomeFragment.Listener {
+    companion object {
         val WELCOME_FINISHED_EVENT = "com.easychange.welcome.ui.WelcomeActivity.WELCOME_FINISHED_EVENT"
     }
+
     private val presenter: WelcomePresenter by lazy { WelcomePresenter() }
 
     /*
@@ -23,7 +24,7 @@ class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, WelcomeFragme
         setContentView(R.layout.wlc_activity_welcome)
         val welcomeFragment = supportFragmentManager.findFragmentById(R.id.framelayout_activitywelcome)
 
-        if( welcomeFragment == null)
+        if (welcomeFragment == null)
             supportFragmentManager.addFragment(R.id.framelayout_activitywelcome, WelcomeFragment.newInstance())
     }
 
@@ -50,7 +51,7 @@ class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, WelcomeFragme
      * Helpers methods
      */
 
-    fun getWelcomeFragment(): WelcomeFragment{
+    fun getWelcomeFragment(): WelcomeFragment {
         return supportFragmentManager.findFragmentById(R.id.framelayout_activitywelcome) as WelcomeFragment
     }
 

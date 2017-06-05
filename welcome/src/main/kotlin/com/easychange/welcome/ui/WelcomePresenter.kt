@@ -1,6 +1,6 @@
 package com.easychange.welcome.ui
 
-class WelcomePresenter : WelcomeContract.Presenter{
+class WelcomePresenter : WelcomeContract.Presenter {
     private var view: WelcomeContract.View? = null
 
     override fun attach(view: WelcomeContract.View) {
@@ -17,7 +17,7 @@ class WelcomePresenter : WelcomeContract.Presenter{
 
     override fun pageChanged() {
         view?.let {
-            if(it.isLastPage()){
+            if (it.isLastPage()) {
                 it.hideSkipButton()
                 it.hideNextButton()
                 it.showDoneButton()

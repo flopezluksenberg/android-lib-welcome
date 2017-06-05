@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import com.squareup.picasso.Picasso
 
-fun FragmentManager.addFragment(resourceId: Int, fragment: Fragment?){
+fun FragmentManager.addFragment(resourceId: Int, fragment: Fragment?) {
     beginTransaction().add(resourceId, fragment).commit()
 }
 
