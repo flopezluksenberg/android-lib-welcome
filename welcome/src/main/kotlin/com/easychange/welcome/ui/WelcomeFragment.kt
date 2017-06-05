@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.easychange.commons.ui.WindowUtils
 import com.easychange.welcome.R
 import com.easychange.welcome.inflate
 import com.easychange.welcome.ui.viewpager.IntroAdapter
@@ -19,8 +18,8 @@ import kotlinx.android.synthetic.main.wlc_fragment_welcome.tablayout_fragmentwel
 import kotlinx.android.synthetic.main.wlc_fragment_welcome.viewpager_fragmentwelcome as viewpager
 
 class WelcomeFragment : Fragment(), StepPageChangeListener.OnPageChangeListener {
-    companion object{
-        fun newInstance(): WelcomeFragment{
+    companion object {
+        fun newInstance(): WelcomeFragment {
             return WelcomeFragment()
         }
     }
@@ -47,7 +46,7 @@ class WelcomeFragment : Fragment(), StepPageChangeListener.OnPageChangeListener 
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         viewpager.adapter = introAdapter
-        viewpager.addOnPageChangeListener(StepPageChangeListener(this));
+        viewpager.addOnPageChangeListener(StepPageChangeListener(this))
         viewpager.setPageTransformer(false, IntroPageTransformer())
         tablayout.setupWithViewPager(viewpager, true)
 
@@ -61,7 +60,7 @@ class WelcomeFragment : Fragment(), StepPageChangeListener.OnPageChangeListener 
      */
 
     fun showNextTab() {
-        if (!isLastPage()) viewpager.setCurrentItem( viewpager.currentItem + 1, true)
+        if (!isLastPage()) viewpager.setCurrentItem(viewpager.currentItem + 1, true)
     }
 
     fun hideNextButton() {
@@ -89,7 +88,7 @@ class WelcomeFragment : Fragment(), StepPageChangeListener.OnPageChangeListener 
     }
 
     fun isLastPage(): Boolean = (viewpager.adapter as IntroAdapter).isLastPage(viewpager.currentItem)
-    fun getCurrentTab(): Int  = viewpager.currentItem
+    fun getCurrentTab(): Int = viewpager.currentItem
 
 
     /*
@@ -103,10 +102,10 @@ class WelcomeFragment : Fragment(), StepPageChangeListener.OnPageChangeListener 
         val adapter = viewpager.adapter as IntroAdapter
         val color: Int?
 
-        if(position < adapter.count -1){
+        if (position < adapter.count - 1) {
             color = colorEvaluator.evaluate(positionOffset, adapter.fragments[position].color, adapter.fragments[position + 1].color) as Int
             viewpager.setBackgroundColor(color)
-        }else{
+        } else {
             color = adapter.fragments[position].color
             viewpager.setBackgroundColor(color)
         }

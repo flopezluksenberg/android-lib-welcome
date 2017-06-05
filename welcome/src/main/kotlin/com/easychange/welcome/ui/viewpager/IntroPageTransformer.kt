@@ -5,7 +5,7 @@ import android.view.View
 import com.easychange.welcome.R
 
 
-class IntroPageTransformer : ViewPager.PageTransformer{
+class IntroPageTransformer : ViewPager.PageTransformer {
     override fun transformPage(page: View?, position: Float) {
         // Get the page index from the tag. This makes
         // it possible to know which page index you're
@@ -47,7 +47,7 @@ class IntroPageTransformer : ViewPager.PageTransformer{
             // fade, but the animation should also slowly move
             // down and out of the screen
             val description = page.findViewById(R.id.textview_fragmentwelcomestep_description)
-            description.translationY = - pageWidthTimesPosition / 2f
+            description.translationY = -pageWidthTimesPosition / 2f
             description.alpha = 1.0f - absPosition
 
             // Now, we want the image to move to the right,
@@ -62,7 +62,7 @@ class IntroPageTransformer : ViewPager.PageTransformer{
             // isn't null.
             if (image != null) {
                 image.alpha = 1.0f - absPosition
-                image.translationX = - pageWidthTimesPosition * 1.5f
+                image.translationX = -pageWidthTimesPosition * 1.5f
             }
 
             // Finally, it can be useful to know the direction

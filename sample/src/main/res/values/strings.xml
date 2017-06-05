@@ -13,9 +13,10 @@
     <string name="textview_activitymain_descritpion1">Welcome lib is a simple library that allows you show a fancy tipical intro with few (non-hard) configuration.</string>
     <string name="textview_activitymain_descritpion2">Click next button to watch a live sample</string>
     <string name="textview_activitymain_question">How it works?</string>
-    <string name="textview_activitymain_answer">When you start it, a new activity will appear with a ViewPager inside for each step and three buttons: Next, Skip and Done. If you press Done or Skip then the previews requested nextIntent will start and the activity will be finished.</string>
+    <string name="textview_activitymain_answer">When you start it, a new activity will appear with a ViewPager inside for each step and three buttons: Next, Skip and Done. If you press Done or Skip then the previews requested nextIntent will start and the activity will be finished.\n\nYou can show welcome view only if is first open app. To perform this, you must set true onlyFirstOpenApp param in start() method.</string>
     <string name="textview_activitymain_livesample">Live Sample!</string>
     <string name="textview_activityfinished_title">Sample Finished!</string>
     <string name="textview_activityfinished_description1">Sample app has finsished. If you have a suggest or you want report an issue please contact us in our github repository!</string>
-    <string name="textview_activityfinished_description2">If you want, you can try sample again clicking in next button</string>
+    <string name="textview_activityfinished_description2">If you want, you can try sample again clicking one of next buttons.</string>
+    <string name="button_startwelcomesample_remember">Start Welcome Lib Sample (Only First Open App)</string>
 </resources>

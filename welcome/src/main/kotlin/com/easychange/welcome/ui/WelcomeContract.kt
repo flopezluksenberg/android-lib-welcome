@@ -2,7 +2,7 @@ package com.easychange.welcome.ui
 
 
 interface WelcomeContract {
-    interface Presenter{
+    interface Presenter {
         fun attach(view: View)
         fun detach()
         fun initialize(currentTab: Int)
@@ -12,7 +12,7 @@ interface WelcomeContract {
         fun pageChanged()
     }
 
-    interface View{
+    interface View {
         fun hideNextButton()
         fun showNextButton()
         fun showDoneButton()

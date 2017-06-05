@@ -2,8 +2,10 @@
 
     package="com.easychange.welcome">
 
-    <application android:allowBackup="true" android:supportsRtl="true">
-        <activity android:name="com.easychange.welcome.ui.WelcomeActivity"/>
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity android:name="com.easychange.welcome.ui.WelcomeActivity" />
     </application>
 
 </manifest>

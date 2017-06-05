@@ -5,7 +5,7 @@ import android.support.v4.content.ContextCompat
 import com.easychange.welcome.WelcomeApi
 import com.easychange.welcome.WelcomeStep
 
-class SampleApplication : Application(){
+class SampleApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()

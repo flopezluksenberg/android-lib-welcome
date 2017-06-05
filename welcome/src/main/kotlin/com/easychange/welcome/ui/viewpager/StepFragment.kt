@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.wlc_fragment_welcome_step.view.imageview_f
 import kotlinx.android.synthetic.main.wlc_fragment_welcome_step.view.textview_fragmentwelcomestep_description as description
 import kotlinx.android.synthetic.main.wlc_fragment_welcome_step.view.textview_fragmentwelcomestep_title as title
 
-class StepFragment : Fragment(){
+class StepFragment : Fragment() {
     companion object {
         private val PAGE = "com.easychange.welcome.ui.viewpager.StepFragment.PAGE"
         private val COLOR = "com.easychange.welcome.ui.viewpager.StepFragment.COLOR"
@@ -23,7 +23,7 @@ class StepFragment : Fragment(){
         private val DRAWABLE = "com.easychange.welcome.ui.viewpager.StepFragment.DRAWABLE"
         private val LOGGER: Logger = LoggerFactory.getLogger(StepFragment::class.java)
 
-        fun newInstance(page: Int, color:Int, drawable: Int, title:String, description: String): StepFragment {
+        fun newInstance(page: Int, color: Int, drawable: Int, title: String, description: String): StepFragment {
             val fragment = StepFragment()
             val bundle = Bundle()
             bundle.putInt(PAGE, page)
