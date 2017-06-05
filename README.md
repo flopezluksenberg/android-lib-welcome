@@ -20,7 +20,7 @@ allprojects {
 ```gradle
 dependencies {
     ...
-    compile 'com.github.flopezluksenberg:easychange-app-welcome:v1.0.0'
+    compile 'com.github.flopezluksenberg:easychange-app-welcome:v1.1.0'
     ...
 }
 ```
@@ -37,15 +37,15 @@ To configure your welcome intro you need follow next steps:
 data class WelcomeStep(val title: String,
                        val description: String,
                        val backgroundColor: Int,
-                       val imageResourceId: Int
+                       val imageResourceId: Int)
 ```
 
 Example of WelcomeStep can be:
 ```kotlin
-WelcomeStep(
+private val welcomeStep1 = WelcomeStep(
     "A very nice title for this tab!",
-    "A very nice description in this tab,
-    ContextCompat.getColor(this, android.R.color.holo_red_dark),
+    "A very nice description in this tab",
+    ContextCompat?.getColor(this, android.R.color.holo_red_dark),
     R.drawable.an_icon_in_the_middle_of_screen
 )
 ```
