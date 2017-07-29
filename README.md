@@ -20,7 +20,7 @@ allprojects {
 ```gradle
 dependencies {
     ...
-    compile 'com.github.flopezluksenberg:easychange-app-welcome:v1.1.0'
+    compile 'com.github.flopezluksenberg:easychange-app-welcome:v1.1.1'
     ...
 }
 ```
