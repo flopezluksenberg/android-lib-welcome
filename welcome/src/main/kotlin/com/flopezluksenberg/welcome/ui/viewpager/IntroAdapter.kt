@@ -1,9 +1,9 @@
-package com.easychange.welcome.ui.viewpager
+package com.flopezluksenberg.welcome.ui.viewpager
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.easychange.welcome.WelcomeApi
+import com.flopezluksenberg.welcome.WelcomeApi
 
 
 class IntroAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {

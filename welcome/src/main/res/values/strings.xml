@@ -1,5 +1,5 @@
 <resources>
     <string name="wlc_imageview_fragmentwlecomestep_description_logo">Logo</string>
-    <string name="wlc_button_fragmentwelcome_skip">Saltar</string>
-    <string name="wlc_button_fragmentwelcome_done">Finalizar</string>
+    <string name="wlc_button_activitywelcome_skip">Saltar</string>
+    <string name="wlc_button_activitywelcome_done">Finalizar</string>
 </resources>

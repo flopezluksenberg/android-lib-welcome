@@ -1,9 +1,9 @@
-package com.easychange.sample
+package com.flopezluksenberg.sample
 
 import android.app.Application
 import android.support.v4.content.ContextCompat
-import com.easychange.welcome.WelcomeApi
-import com.easychange.welcome.WelcomeStep
+import com.flopezluksenberg.welcome.WelcomeApi
+import com.flopezluksenberg.welcome.WelcomeStep
 
 class SampleApplication : Application() {
 

@@ -1,4 +1,4 @@
-package com.easychange.welcome.ui.viewpager
+package com.flopezluksenberg.welcome.ui.viewpager
 
 import android.support.v4.view.ViewPager
 

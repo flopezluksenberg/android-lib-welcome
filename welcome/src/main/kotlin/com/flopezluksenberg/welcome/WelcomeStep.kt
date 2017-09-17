@@ -1,4 +1,4 @@
-package com.easychange.welcome
+package com.flopezluksenberg.welcome
 
 data class WelcomeStep(val title: String,
                        val description: String,

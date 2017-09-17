@@ -1,13 +1,13 @@
-package com.easychange.welcome.ui.viewpager
+package com.flopezluksenberg.welcome.ui.viewpager
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.easychange.welcome.R
-import com.easychange.welcome.inflate
-import com.easychange.welcome.load
+import com.flopezluksenberg.welcome.R
+import com.flopezluksenberg.welcome.inflate
+import com.flopezluksenberg.welcome.load
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import kotlinx.android.synthetic.main.wlc_fragment_welcome_step.view.imageview_fragmentwelcomestep as imageview
@@ -16,11 +16,11 @@ import kotlinx.android.synthetic.main.wlc_fragment_welcome_step.view.textview_fr
 
 class StepFragment : Fragment() {
     companion object {
-        private val PAGE = "com.easychange.welcome.ui.viewpager.StepFragment.PAGE"
-        private val COLOR = "com.easychange.welcome.ui.viewpager.StepFragment.COLOR"
-        private val TITLE = "com.easychange.welcome.ui.viewpager.StepFragment.TITLE"
-        private val DESCRIPTION = "com.easychange.welcome.ui.viewpager.StepFragment.DESCRIPTION"
-        private val DRAWABLE = "com.easychange.welcome.ui.viewpager.StepFragment.DRAWABLE"
+        private val PAGE = "com.flopezluksenberg.welcome.ui.viewpager.StepFragment.PAGE"
+        private val COLOR = "com.flopezluksenberg.welcome.ui.viewpager.StepFragment.COLOR"
+        private val TITLE = "com.flopezluksenberg.welcome.ui.viewpager.StepFragment.TITLE"
+        private val DESCRIPTION = "com.flopezluksenberg.welcome.ui.viewpager.StepFragment.DESCRIPTION"
+        private val DRAWABLE = "com.flopezluksenberg.welcome.ui.viewpager.StepFragment.DRAWABLE"
         private val LOGGER: Logger = LoggerFactory.getLogger(StepFragment::class.java)
 
         fun newInstance(page: Int, color: Int, drawable: Int, title: String, description: String): StepFragment {

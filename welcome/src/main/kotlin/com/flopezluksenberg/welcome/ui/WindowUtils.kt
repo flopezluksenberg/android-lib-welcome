@@ -1,4 +1,4 @@
-package com.easychange.welcome.ui
+package com.flopezluksenberg.welcome.ui
 
 import android.content.Context
 import android.os.Build

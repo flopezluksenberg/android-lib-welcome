@@ -1,4 +1,4 @@
-package com.easychange.welcome
+package com.flopezluksenberg.welcome
 
 import android.content.Context
 import android.preference.PreferenceManager
@@ -18,18 +18,11 @@ object PrefUtils {
 
     fun getFromPrefs(context: Context, key: String, defaultValue: Boolean): Boolean {
         val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context)
-        try {
-            return sharedPrefs.getBoolean(key, defaultValue)
+        return try {
+            sharedPrefs.getBoolean(key, defaultValue)
         } catch (e: Exception) {
             LOGGER.error("An error occurred while getting $key property from shared preferences", e)
-            return defaultValue
+            defaultValue
         }
-    }
-
-    fun removeFromPrefs(context: Context, key: String) {
-        val prefs = PreferenceManager.getDefaultSharedPreferences(context)
-        val editor = prefs.edit()
-        editor.remove(key)
-        editor.apply()
     }
 }

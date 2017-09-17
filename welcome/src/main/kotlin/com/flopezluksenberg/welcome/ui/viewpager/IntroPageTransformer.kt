@@ -1,8 +1,8 @@
-package com.easychange.welcome.ui.viewpager
+package com.flopezluksenberg.welcome.ui.viewpager
 
 import android.support.v4.view.ViewPager
 import android.view.View
-import com.easychange.welcome.R
+import com.flopezluksenberg.welcome.R
 
 
 class IntroPageTransformer : ViewPager.PageTransformer {

@@ -1,8 +1,8 @@
-# Easychange Welcome Library
-**Easychange Welcome Library** is a simple android library written in kotlin that allows show a fancy welcome in your app with fews (and easy) configurations. 
+# Android Welcome Library
+**Android Welcome Library** is a simple android library written in kotlin that allows show a fancy welcome in your app with fews (and easy) configurations. 
 
 # Sample
-![alt text](https://github.com/flopezluksenberg/easychange-app-welcome/blob/develop/sample.gif?raw=true "Sample Video")
+![alt text](https://github.com/flopezluksenberg/android-lib-welcome/blob/develop/sample.gif?raw=true "Sample Video")
 
 # Gradle Configuration
 
@@ -20,7 +20,7 @@ allprojects {
 ```gradle
 dependencies {
     ...
-    compile 'com.github.flopezluksenberg:easychange-app-welcome:v1.1.1'
+    compile 'com.github.flopezluksenberg:android-lib-welcome:v1.0.0'
     ...
 }
 ```
@@ -65,7 +65,7 @@ class YourApplicationClass : Application(){
 ```xml
 <application ...>
     //..
-    <activity android:name="com.easychange.welcome.ui.WelcomeActivity" android:theme="MyVeryFancyTheme!"/>
+    <activity android:name="com.flopezluksenberg.welcome.ui.WelcomeActivity" android:theme="MyVeryFancyTheme!"/>
     //..
 </application>
 ```

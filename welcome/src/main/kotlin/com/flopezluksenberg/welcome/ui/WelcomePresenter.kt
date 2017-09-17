@@ -1,4 +1,4 @@
-package com.easychange.welcome.ui
+package com.flopezluksenberg.welcome.ui
 
 class WelcomePresenter : WelcomeContract.Presenter {
     private var view: WelcomeContract.View? = null

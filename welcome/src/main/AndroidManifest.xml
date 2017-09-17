@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="com.easychange.welcome">
+    package="com.flopezluksenberg.welcome">
 
     <application
         android:allowBackup="true"
         android:supportsRtl="true">
-        <activity android:name="com.easychange.welcome.ui.WelcomeActivity" />
+        <activity android:name="com.flopezluksenberg.welcome.ui.WelcomeActivity" />
     </application>
 
 </manifest>

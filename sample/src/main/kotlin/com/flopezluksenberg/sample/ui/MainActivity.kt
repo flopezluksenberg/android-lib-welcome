@@ -1,10 +1,10 @@
-package com.easychange.sample.ui
+package com.flopezluksenberg.sample.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.easychange.sample.R
-import com.easychange.welcome.WelcomeApi
+import com.flopezluksenberg.sample.R
+import com.flopezluksenberg.welcome.WelcomeApi
 import kotlinx.android.synthetic.main.activity_main.button_activitymain_start as start
 import kotlinx.android.synthetic.main.activity_main.button_activitymain_start_remember as startRemember
 

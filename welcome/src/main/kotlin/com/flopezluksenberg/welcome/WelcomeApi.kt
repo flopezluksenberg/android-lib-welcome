@@ -1,15 +1,15 @@
-package com.easychange.welcome
+package com.flopezluksenberg.welcome
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.support.v4.content.LocalBroadcastManager
-import com.easychange.welcome.ui.WelcomeActivity
+import com.flopezluksenberg.welcome.ui.WelcomeActivity
 
 
 object WelcomeApi {
-    private val IS_FIRST_OPEN_APP = "com.easychange.welcome.WelcomeApi.IS_FIRST_OPEN_APP"
+    private val IS_FIRST_OPEN_APP = "com.flopezluksenberg.welcome.WelcomeApi.IS_FIRST_OPEN_APP"
 
     lateinit var steps: Array<WelcomeStep>
     lateinit var context: Context
