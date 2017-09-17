@@ -2,6 +2,8 @@ package com.flopezluksenberg.welcome.ui.viewpager
 
 import android.support.v4.view.ViewPager
 import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
 import com.flopezluksenberg.welcome.R
 
 
@@ -40,20 +42,20 @@ class IntroPageTransformer : ViewPager.PageTransformer {
 
             // Let's start by animating the title.
             // We want it to fade as it scrolls out
-            val title = page.findViewById(R.id.textview_fragmentwelcomestep_title)
+            val title = page.findViewById<TextView>(R.id.textview_fragmentwelcomestep_title)
             title.alpha = 1.0f - absPosition
 
             // Now the description. We also want this one to
             // fade, but the animation should also slowly move
             // down and out of the screen
-            val description = page.findViewById(R.id.textview_fragmentwelcomestep_description)
+            val description = page.findViewById<TextView>(R.id.textview_fragmentwelcomestep_description)
             description.translationY = -pageWidthTimesPosition / 2f
             description.alpha = 1.0f - absPosition
 
             // Now, we want the image to move to the right,
             // i.e. in the opposite direction of the rest of the
             // content while fading out
-            val image = page.findViewById(R.id.imageview_fragmentwelcomestep)
+            val image = page.findViewById<ImageView>(R.id.imageview_fragmentwelcomestep)
 
             // We're attempting to create an effect for a View
             // specific to one of the pages in our ViewPager.
