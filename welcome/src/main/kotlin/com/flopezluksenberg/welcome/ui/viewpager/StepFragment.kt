@@ -2,12 +2,12 @@ package com.flopezluksenberg.welcome.ui.viewpager
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.flopezluksenberg.welcome.R
 import com.flopezluksenberg.welcome.inflate
-import com.flopezluksenberg.welcome.load
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import kotlinx.android.synthetic.main.wlc_fragment_welcome_step.view.imageview_fragmentwelcomestep as imageview
@@ -52,7 +52,7 @@ class StepFragment : Fragment() {
 
         view?.let {
             view.title.text = title
-            view.imageview.load(drawable)
+            view.imageview.setImageDrawable(ContextCompat.getDrawable(context, drawable))
             view.description.text = description
             view.tag = position
         }

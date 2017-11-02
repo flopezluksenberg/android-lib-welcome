@@ -26,8 +26,10 @@
             android:id="@+id/imageview_fragmentwelcomestep"
             android:layout_width="160dp"
             android:layout_height="160dp"
+            android:scaleType="fitXY"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:contentDescription="@string/wlc_imageview_fragmentwlecomestep_description_logo" />
+            android:contentDescription="@string/wlc_imageview_fragmentwlecomestep_description_logo"
+            tools:src="#123132"/>
 
     </FrameLayout>
 

@@ -14,16 +14,10 @@ class IntroAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
     }
 
 
-    override fun getItem(position: Int): Fragment {
-        return fragments[position]
-    }
+    override fun getItem(position: Int): Fragment = fragments[position]
 
-    override fun getCount(): Int {
-        return fragments.size
-    }
+    override fun getCount(): Int = fragments.size
 
 
-    fun isLastPage(currentPosition: Int): Boolean {
-        return fragments.size - 1 == currentPosition
-    }
+    fun isLastPage(currentPosition: Int): Boolean = fragments.size - 1 == currentPosition
 }

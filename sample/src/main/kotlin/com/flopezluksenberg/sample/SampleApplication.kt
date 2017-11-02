@@ -18,7 +18,7 @@ class SampleApplication : Application() {
                         getString(R.string.step_1_title),
                         getString(R.string.step_1_description),
                         ContextCompat.getColor(this, android.R.color.holo_blue_dark),
-                        R.drawable.ic_placeholder
+                        R.drawable.ic_placeholder_svg
                 ),
                 WelcomeStep(
                         getString(R.string.step_2_title),
@@ -30,7 +30,7 @@ class SampleApplication : Application() {
                         getString(R.string.step_3_title),
                         getString(R.string.step_3_description),
                         ContextCompat.getColor(this, android.R.color.holo_red_dark),
-                        R.drawable.ic_placeholder
+                        R.drawable.ic_placeholder_svg
                 )
         )
     }
