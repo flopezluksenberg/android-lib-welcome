@@ -3,7 +3,7 @@ package com.flopezluksenberg.welcome.ui.viewpager
 import android.support.v4.view.ViewPager
 
 
-class StepPageChangeListener(val onPageChangeListener: OnPageChangeListener) : ViewPager.OnPageChangeListener {
+class StepPageChangeListener(private val onPageChangeListener: OnPageChangeListener) : ViewPager.OnPageChangeListener {
     private var first: Boolean = true
 
     override fun onPageSelected(position: Int) {

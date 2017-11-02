@@ -40,7 +40,7 @@ class IntroPageTransformer : ViewPager.PageTransformer {
             // a good place to show animations that react to the user's
             // swiping as it provides a good user experience.
 
-            // Let's start by animating the title.
+            // Let's show by animating the title.
             // We want it to fade as it scrolls out
             val title = page.findViewById<TextView>(R.id.textview_fragmentwelcomestep_title)
             title.alpha = 1.0f - absPosition

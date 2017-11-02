@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Sample: Welcome Lib</string>
-    <string name="step_1_title">First Title</string>
-    <string name="step_1_description">First very important description</string>
+    <string name="step_1_title">First Title With a long text. So So Long for test the lib behavior</string>
+    <string name="step_1_description">First very important description So so so Long for test the lib behavior. I\'d like that it were cute when it shown</string>
     <string name="step_2_title">Second Title</string>
     <string name="step_2_description">Second very important description</string>
     <string name="step_3_title">Third Title</string>

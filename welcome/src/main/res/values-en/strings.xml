@@ -2,4 +2,5 @@
     <string name="wlc_imageview_fragmentwlecomestep_description_logo">Logo</string>
     <string name="wlc_button_activitywelcome_skip">Skip</string>
     <string name="wlc_button_activitywelcome_done">Done</string>
+    <string name="wlc_button_activitywelcome_next">Next</string>
 </resources>
