@@ -22,6 +22,7 @@ object WelcomeApi {
     fun start(showAlways: Boolean = false) {
         if (showAlways || isFirstOpenApp()) {
             val intent = Intent(context, WelcomeActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             context.startActivity(intent)
         }
     }
