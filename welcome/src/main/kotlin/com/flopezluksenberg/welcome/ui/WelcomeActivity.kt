@@ -1,9 +1,7 @@
 package com.flopezluksenberg.welcome.ui
 
 import android.animation.ArgbEvaluator
-import android.content.Intent
 import android.os.Bundle
-import android.support.v4.content.LocalBroadcastManager
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.flopezluksenberg.welcome.R
@@ -18,9 +16,6 @@ import kotlinx.android.synthetic.main.wlc_activity_welcome.viewpager_activitywel
 
 
 class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, StepPageChangeListener.OnPageChangeListener{
-    companion object {
-        val WELCOME_FINISHED_EVENT = "com.flopezluksenberg.welcome.ui.WelcomeActivity.WELCOME_FINISHED_EVENT"
-    }
 
     private val introAdapter: IntroAdapter by lazy { IntroAdapter(supportFragmentManager) }
     private val colorEvaluator = ArgbEvaluator()
@@ -86,8 +81,6 @@ class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, StepPageChang
     override fun isLastPage(): Boolean = (viewpager.adapter as IntroAdapter).isLastPage(viewpager.currentItem)
 
     override fun welcomeFinished() {
-        val intent = Intent(WELCOME_FINISHED_EVENT)
-        LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
         finish()
     }
 

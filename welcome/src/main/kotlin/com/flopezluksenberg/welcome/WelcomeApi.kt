@@ -1,10 +1,7 @@
 package com.flopezluksenberg.welcome
 
-import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.content.IntentFilter
-import android.support.v4.content.LocalBroadcastManager
 import com.flopezluksenberg.welcome.ui.WelcomeActivity
 
 
@@ -22,17 +19,11 @@ object WelcomeApi {
         this.steps = steps
     }
 
-    fun start(nextIntent: Intent, onlyFirstOpenApp: Boolean = false) {
-        if (onlyFirstOpenApp && !isFirstOpenApp()) {
-            nextIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            context.startActivity(nextIntent)
-            return
+    fun start(showAlways: Boolean = false) {
+        if (showAlways || isFirstOpenApp()) {
+            val intent = Intent(context, WelcomeActivity::class.java)
+            context.startActivity(intent)
         }
-
-        val intent = Intent(context, WelcomeActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        context.startActivity(intent)
-        LocalBroadcastManager.getInstance(context).registerReceiver(onWelcomeActivityFinished(nextIntent), IntentFilter(WelcomeActivity.WELCOME_FINISHED_EVENT))
     }
 
     private fun isFirstOpenApp(): Boolean {
@@ -41,14 +32,5 @@ object WelcomeApi {
             return true
         }
         return false
-    }
-
-    private fun onWelcomeActivityFinished(nextIntent: Intent): BroadcastReceiver? {
-        return object : BroadcastReceiver() {
-            override fun onReceive(context: Context, intent: Intent) {
-                nextIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                context.startActivity(nextIntent)
-            }
-        }
     }
 }

@@ -1,6 +1,5 @@
 package com.flopezluksenberg.sample.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.flopezluksenberg.sample.R
@@ -14,16 +13,12 @@ class FinishedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finished)
 
-        val intent = Intent(this, FinishedActivity::class.java)
-
         start.setOnClickListener {
-            finish()
-            WelcomeApi.start(intent)
+            WelcomeApi.start(showAlways = false)
         }
 
         startRemember.setOnClickListener {
-            finish()
-            WelcomeApi.start(intent, onlyFirstOpenApp = true)
+            WelcomeApi.start()
         }
     }
 }

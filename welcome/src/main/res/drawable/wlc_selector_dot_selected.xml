@@ -6,7 +6,7 @@
             android:shape="ring"
             android:thickness="3dp"
             android:useLevel="false">
-            <solid android:color="#a0949494"/>
+            <solid android:color="#a0FFFFFF"/>
         </shape>
     </item>
 </layer-list>
