@@ -9,13 +9,15 @@ object WelcomeApi {
     private val IS_FIRST_OPEN_APP = "com.flopezluksenberg.welcome.WelcomeApi.IS_FIRST_OPEN_APP"
 
     lateinit var steps: Array<WelcomeStep>
+    private var showTabLayout: Boolean? = null
     lateinit var context: Context
 
-    fun init(context: Context, steps: Array<WelcomeStep>) {
+    fun init(context: Context, steps: Array<WelcomeStep>, showTabLayout: Boolean = true) {
         if (steps.isEmpty()) {
             throw IllegalStateException("At least one step is required!")
         }
         this.context = context
+        this.showTabLayout = showTabLayout
         this.steps = steps
     }
 
@@ -23,6 +25,7 @@ object WelcomeApi {
         if (showAlways || isFirstOpenApp()) {
             val intent = Intent(context, WelcomeActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            intent.putExtra(WelcomeActivity.SHOW_TAB_LAYOUT, showTabLayout ?: true)
             context.startActivity(intent)
         }
     }

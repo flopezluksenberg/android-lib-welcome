@@ -9,7 +9,7 @@ class SampleApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        WelcomeApi.init(this, createWelcomeSteps())
+        WelcomeApi.init(this, createWelcomeSteps(), false)
     }
 
     private fun createWelcomeSteps(): Array<WelcomeStep> {

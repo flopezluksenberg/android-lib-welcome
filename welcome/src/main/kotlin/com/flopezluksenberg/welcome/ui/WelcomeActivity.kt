@@ -17,6 +17,10 @@ import kotlinx.android.synthetic.main.wlc_activity_welcome.viewpager_activitywel
 
 class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, StepPageChangeListener.OnPageChangeListener{
 
+    companion object {
+        const val SHOW_TAB_LAYOUT = "SHOW_TAB_LAYOUT"
+    }
+
     private val introAdapter: IntroAdapter by lazy { IntroAdapter(supportFragmentManager) }
     private val colorEvaluator = ArgbEvaluator()
     private val presenter: WelcomePresenter by lazy { WelcomePresenter() }
@@ -24,11 +28,11 @@ class WelcomeActivity : AppCompatActivity(), WelcomeContract.View, StepPageChang
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.wlc_activity_welcome)
-
         viewpager.adapter = introAdapter
         viewpager.addOnPageChangeListener(StepPageChangeListener(this))
         viewpager.setPageTransformer(false, IntroPageTransformer())
         tablayout.setupWithViewPager(viewpager, true)
+        tablayout.visibility = if (intent.getBooleanExtra(SHOW_TAB_LAYOUT, true)) View.VISIBLE else View.GONE
 
         done.setOnClickListener { presenter.doneButtonClicked() }
         next.setOnClickListener { presenter.nextButtonClicked() }
